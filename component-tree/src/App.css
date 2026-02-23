@@ -1,0 +1,95 @@
+body {
+  background-color: #ffe4c4;
+}
+
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header,
+footer {
+  padding: 16px 18px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+header h1 {
+  font-size: 1.6rem;
+}
+
+main {
+  margin: 16px 0;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+aside,
+section {
+  padding: 16px 18px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+aside li {
+  padding: 10px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+article {
+  padding: 14px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+article h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+article p {
+  opacity: 0.85;
+}
+
+section {
+  display: grid;
+  gap: 12px;
+}
+
+footer {
+  text-align: center;
+  opacity: 0.9;
+}
+
+@media (max-width: 760px) {
+  #root {
+    padding: 16px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+}
